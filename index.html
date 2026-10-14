@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio profesional de Héctor Sanz, programador de aplicaciones web.">
-  <title>Héctor Sanz | Programador de Aplicaciones Web</title>
+  <meta name="description" content="Portfolio profesional de Héctor Sanz, perfil tecnológico con experiencia en desarrollo web, soporte técnico, hardware y software en Valladolid.">
+  <meta name="theme-color" content="#050a16">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Héctor Sanz | Desarrollo web y soporte técnico">
+  <meta property="og:description" content="Experiencia en desarrollo de aplicaciones web, soporte técnico y reparación de equipos.">
+  <title>Héctor Sanz | Desarrollo web y soporte técnico</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="navbar">
     <a class="logo" href="#inicio">HS<span>.</span></a>
-    <nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">☰</button>
+    <nav id="main-nav" aria-label="Navegación principal">
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#experiencia">Experiencia</a>
       <a href="#proyectos">Proyectos</a>
@@ -18,21 +23,27 @@
       <a href="#habilidades">Habilidades</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <a class="nav-cta" href="#contacto">Hablemos</a>
+    <a class="nav-cta" href="#contacto">Contactar <span aria-hidden="true">↗</span></a>
   </header>
 
   <main>
     <section id="inicio" class="hero">
       <div class="hero-content">
-        <p class="eyebrow">PROGRAMADOR DE APLICACIONES WEB</p>
+        <p class="eyebrow">DESARROLLO WEB · SOPORTE TÉCNICO · SISTEMAS</p>
         <h1>Héctor<br><span>Sanz.</span></h1>
         <p class="hero-text">
-          Desarrollo de aplicaciones web, tecnología y resolución de problemas.
-          Una presentación profesional de mi trayectoria, formación y habilidades.
+          Perfil tecnológico con experiencia en desarrollo de aplicaciones web,
+          soporte técnico y reparación de equipos. Me gusta resolver problemas,
+          aprender de forma continua y construir soluciones útiles.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="#experiencia">Ver trayectoria <span>↗</span></a>
-          <a class="button secondary" href="#contacto">Contactar</a>
+          <a class="button primary" href="#experiencia">Ver mi trayectoria <span>↗</span></a>
+          <a class="button secondary" href="#contacto">Contactar <span>↗</span></a>
+        </div>
+        <div class="tech-stack" aria-label="Tecnologías y áreas de interés">
+          <span class="tech-badge html">HTML</span><span class="tech-badge css">CSS</span>
+          <span class="tech-badge js">JS</span><span class="tech-badge ts">TS</span>
+          <span class="tech-badge php">PHP</span><span class="tech-caption">WEB · CÓDIGO · SOLUCIONES</span>
         </div>
       </div>
       <div class="hero-card cv-hero-card">
@@ -40,22 +51,43 @@
         <div class="cv-frame">
           <img src="assets/foto-hector.png" alt="Foto de Héctor Sanz">
         </div>
+        <div class="portrait-badge"><span class="status-dot"></span> Disponible para oportunidades</div>
         <div class="card-bottom">
-          <span>WEB DEVELOPER</span>
+          <span>PERFIL TECNOLÓGICO</span>
           <span>VALLADOLID · ES</span>
         </div>
       </div>
     </section>
 
-    <section id="sobre-mi" class="section intro">
+    <section id="sobre-mi" class="section intro about-section">
       <div class="section-label">SOBRE MÍ</div>
-      <div>
-        <h2>Construyo soluciones<br><em>digitales.</em></h2>
-        <p>
-          Soy programador de aplicaciones web con formación en Desarrollo de Aplicaciones Web
-          y actualmente ampliando conocimientos con un Máster de Ciberseguridad.
-          Mi experiencia combina desarrollo, soporte técnico, hardware y resolución de incidencias.
-        </p>
+      <div class="about-layout">
+        <div class="about-heading">
+          <span class="about-kicker"><span class="status-dot"></span> DESARROLLO · TECNOLOGÍA · CURIOSIDAD</span>
+          <h2>Convierto ideas<br>en soluciones<br><em>digitales.</em></h2>
+          <p class="about-lead">Me gusta entender cómo funcionan las cosas y transformar los problemas en soluciones útiles, claras y bien construidas.</p>
+        </div>
+        <div class="about-details">
+          <p>Soy profesional del ámbito tecnológico, titulado en <strong>Desarrollo de Aplicaciones Web</strong> y en <strong>Sistemas Microinformáticos y Redes</strong>. Actualmente continúo ampliando mis conocimientos con formación en ciberseguridad.</p>
+          <p>He trabajado tanto en desarrollo web como en soporte técnico y reparación de equipos. Esta combinación me permite entender distintas partes de un entorno tecnológico, desde las aplicaciones hasta el hardware y la atención de incidencias.</p>
+          <p>Busco una nueva oportunidad en la que aportar experiencia, capacidad de aprendizaje y una forma de trabajar práctica, responsable y orientada a resolver problemas.</p>
+          <div class="about-pill-row">
+            <span>Desarrollo web</span><span>Resolución de problemas</span><span>Ciberseguridad</span>
+          </div>
+          <div class="code-window" aria-label="Presentación en formato de código">
+            <div class="code-top"><span></span><span></span><span></span><small>hector.dev / about.js</small></div>
+            <pre><code><i>const</i> hector = {
+  areas: [<b>"Desarrollo web"</b>, <b>"Soporte técnico"</b>],
+  enfoque: <b>"Resolver problemas"</b>,
+  objetivo: <b>"Seguir creciendo"</b>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="about-values" aria-label="Áreas de experiencia">
+        <article class="about-value"><span class="about-value-icon">&lt;/&gt;</span><div><strong>Desarrollo</strong><small>Interfaces y aplicaciones web</small></div><span class="value-arrow">↗</span></article>
+        <article class="about-value"><span class="about-value-icon">⌘</span><div><strong>Soporte técnico</strong><small>Diagnóstico y resolución de incidencias</small></div><span class="value-arrow">↗</span></article>
+        <article class="about-value"><span class="about-value-icon">⌬</span><div><strong>Ciberseguridad</strong><small>Formación en constante evolución</small></div><span class="value-arrow">↗</span></article>
       </div>
     </section>
 
@@ -67,7 +99,7 @@
           <div>
             <h3>Revisor de sistemas de alarmas</h3>
             <h4>VERISURE</h4>
-            <p>Mantenimiento y reparación de problemas con el sistema de alarma.</p>
+            <p>Revisión de sistemas de alarma, detección de incidencias y mantenimiento y reparación de los equipos.</p>
           </div>
         </article>
         <article class="timeline-item featured">
@@ -75,7 +107,7 @@
           <div>
             <h3>Desarrollador de Aplicaciones Web</h3>
             <h4>INETUM</h4>
-            <p>Desarrollo de aplicaciones web destinadas a la Junta de Castilla y León.</p>
+            <p>Participación en el desarrollo de aplicaciones web destinadas a la Junta de Castilla y León.</p>
           </div>
         </article>
         <article class="timeline-item">
@@ -83,7 +115,7 @@
           <div>
             <h3>Técnico vendedor de informática</h3>
             <h4>PCBOX</h4>
-            <p>Reparación y montaje de ordenadores.</p>
+            <p>Montaje y reparación de ordenadores, orientación técnica y atención a clientes en productos informáticos.</p>
           </div>
         </article>
         <article class="timeline-item">
@@ -91,7 +123,7 @@
           <div>
             <h3>Técnico de Software y Hardware</h3>
             <h4>MEDIAMARKT</h4>
-            <p>Gestión del servicio técnico y reparación de dispositivos electrónicos, incluyendo móviles y patinetes eléctricos.</p>
+            <p>Gestión del servicio técnico y diagnóstico y reparación de dispositivos electrónicos, incluidos móviles y patinetes eléctricos.</p>
           </div>
         </article>
       </div>
@@ -128,15 +160,19 @@
           </div>
         </article>
 
-        <article class="project-card project-placeholder">
+        <article class="project-card profile-card">
           <div class="project-content">
-            <span class="project-type">PROYECTO</span>
-            <h3>Próximamente</h3>
+            <span class="project-type">PERFIL PROFESIONAL</span>
+            <h3>Una visión<br>tecnológica global.</h3>
             <p>
-              Aquí iré incorporando otros proyectos desarrollados durante mi
-              formación y experiencia profesional.
+              Mi trayectoria combina desarrollo web con soporte técnico,
+              mantenimiento y reparación de equipos. Me adapto a distintos
+              retos y disfruto aprendiendo herramientas nuevas.
             </p>
-            <span class="project-link disabled">Próximamente</span>
+            <div class="project-tags">
+              <span>Desarrollo</span><span>Hardware</span><span>Software</span><span>Soporte</span>
+            </div>
+            <a class="project-link" href="#experiencia">Conocer mi experiencia <span>↗</span></a>
           </div>
         </article>
       </div>
@@ -174,16 +210,18 @@
           <p class="muted">Conocimientos técnicos y habilidades personales recogidos de mi CV.</p>
         </div>
         <div class="skill-grid">
-          <div class="skill">HTML5</div>
-          <div class="skill">CSS3</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">PHP & MySQL</div>
-          <div class="skill">Figma</div>
-          <div class="skill">Ofimática</div>
+          <div class="skill">HTML5 y CSS3</div>
+          <div class="skill">JavaScript y TypeScript</div>
+          <div class="skill">Angular</div>
+          <div class="skill">PHP y MySQL</div>
+          <div class="skill">Next.js y Tailwind CSS</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">Hardware y software</div>
+          <div class="skill">Soporte técnico</div>
+          <div class="skill">Figma y ofimática</div>
           <div class="skill">Trabajo en equipo</div>
-          <div class="skill">Liderazgo</div>
           <div class="skill">Resolución de problemas</div>
-          <div class="skill">Adaptabilidad <span>10</span></div>
+          <div class="skill">Adaptabilidad</div>
         </div>
       </div>
     </section>
@@ -202,7 +240,7 @@
       <div class="contact-inner">
         <p class="eyebrow">¿TIENES UN PROYECTO?</p>
         <h2>Hablemos<span>.</span></h2>
-        <p>Estoy abierto a oportunidades profesionales, proyectos y nuevas experiencias dentro del mundo tecnológico.</p>
+        <p>Estoy buscando una nueva oportunidad profesional en desarrollo web, soporte técnico o sistemas. Si crees que mi perfil puede encajar en tu equipo, estaré encantado de hablar.</p>
         <a class="contact-email" href="mailto:hsanzriesco@gmail.com">hsanzriesco@gmail.com ↗</a>
         <div class="contact-data">
           <span>629 95 98 91</span>
