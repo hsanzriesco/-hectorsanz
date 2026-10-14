@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,9 +7,12 @@
   <meta name="description" content="Portfolio profesional de Héctor Sanz, perfil tecnológico con experiencia en desarrollo web, soporte técnico, hardware y software en Valladolid.">
   <meta name="theme-color" content="#050a16">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary">
   <meta property="og:title" content="Héctor Sanz | Desarrollo web y soporte técnico">
   <meta property="og:description" content="Experiencia en desarrollo de aplicaciones web, soporte técnico y reparación de equipos.">
   <title>Héctor Sanz | Desarrollo web y soporte técnico</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23050a16%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-size=%2728%27 font-family=%27sans-serif%27 font-weight=%27700%27 fill=%27%23fff%27 text-anchor=%27middle%27%3EHS%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,8 +41,8 @@
           aprender de forma continua y construir soluciones útiles.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="#experiencia">Ver mi trayectoria <span>↗</span></a>
-          <a class="button secondary" href="#contacto">Contactar <span>↗</span></a>
+          <a class="button primary" href="#experiencia">Ver mi trayectoria <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="#contacto">Contactar <span aria-hidden="true">↗</span></a>
         </div>
         <div class="tech-stack" aria-label="Tecnologías y áreas de interés">
           <span class="tech-badge html">HTML</span><span class="tech-badge css">CSS</span>
@@ -49,9 +53,9 @@
       <div class="hero-card cv-hero-card">
         <div class="card-glow"></div>
         <div class="cv-frame">
-          <img src="assets/foto-hector.png" alt="Foto de Héctor Sanz">
+          <img src="assets/foto-hector.png" alt="Foto de Héctor Sanz" fetchpriority="high" decoding="async">
         </div>
-        <div class="portrait-badge"><span class="status-dot"></span> Disponible para oportunidades</div>
+        <div class="portrait-badge"><span class="status-dot" aria-hidden="true"></span> Disponible para oportunidades</div>
         <div class="card-bottom">
           <span>PERFIL TECNOLÓGICO</span>
           <span>VALLADOLID · ES</span>
@@ -59,11 +63,11 @@
       </div>
     </section>
 
-    <section id="sobre-mi" class="section intro about-section">
+    <section id="sobre-mi" class="section about-section">
       <div class="section-label">SOBRE MÍ</div>
       <div class="about-layout">
         <div class="about-heading">
-          <span class="about-kicker"><span class="status-dot"></span> DESARROLLO · TECNOLOGÍA · CURIOSIDAD</span>
+          <span class="about-kicker"><span class="status-dot" aria-hidden="true"></span> DESARROLLO · TECNOLOGÍA · CURIOSIDAD</span>
           <h2>Convierto ideas<br>en soluciones<br><em>digitales.</em></h2>
           <p class="about-lead">Me gusta entender cómo funcionan las cosas y transformar los problemas en soluciones útiles, claras y bien construidas.</p>
         </div>
@@ -85,9 +89,9 @@
         </div>
       </div>
       <div class="about-values" aria-label="Áreas de experiencia">
-        <article class="about-value"><span class="about-value-icon">&lt;/&gt;</span><div><strong>Desarrollo</strong><small>Interfaces y aplicaciones web</small></div><span class="value-arrow">↗</span></article>
-        <article class="about-value"><span class="about-value-icon">⌘</span><div><strong>Soporte técnico</strong><small>Diagnóstico y resolución de incidencias</small></div><span class="value-arrow">↗</span></article>
-        <article class="about-value"><span class="about-value-icon">⌬</span><div><strong>Ciberseguridad</strong><small>Formación en constante evolución</small></div><span class="value-arrow">↗</span></article>
+        <article class="about-value"><span class="about-value-icon" aria-hidden="true">&lt;/&gt;</span><div><strong>Desarrollo</strong><small>Interfaces y aplicaciones web</small></div><span class="value-arrow" aria-hidden="true">↗</span></article>
+        <article class="about-value"><span class="about-value-icon" aria-hidden="true">⌘</span><div><strong>Soporte técnico</strong><small>Diagnóstico y resolución de incidencias</small></div><span class="value-arrow" aria-hidden="true">↗</span></article>
+        <article class="about-value"><span class="about-value-icon" aria-hidden="true">⌬</span><div><strong>Ciberseguridad</strong><small>Formación en constante evolución</small></div><span class="value-arrow" aria-hidden="true">↗</span></article>
       </div>
     </section>
 
@@ -129,7 +133,6 @@
       </div>
     </section>
 
-
     <section id="proyectos" class="section projects-section">
       <div class="section-label">PROYECTOS</div>
       <div class="projects-heading">
@@ -155,7 +158,7 @@
               <span>PostgreSQL</span>
             </div>
             <a class="project-link" href="https://ajcar25.vercel.app" target="_blank" rel="noopener noreferrer">
-              Ver proyecto <span>↗</span>
+              Ver proyecto <span aria-hidden="true">↗</span>
             </a>
           </div>
         </article>
@@ -172,7 +175,7 @@
             <div class="project-tags">
               <span>Desarrollo</span><span>Hardware</span><span>Software</span><span>Soporte</span>
             </div>
-            <a class="project-link" href="#experiencia">Conocer mi experiencia <span>↗</span></a>
+            <a class="project-link" href="#experiencia">Conocer mi experiencia <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
@@ -226,7 +229,7 @@
       </div>
     </section>
 
-    <section class="section courses">
+    <section id="cursos" class="section courses">
       <div class="section-label">CURSOS</div>
       <div class="course-list">
         <div><span>2025</span><strong>Curso de PHP y MySQL</strong><small>OpenWebinars</small></div>
@@ -241,9 +244,9 @@
         <p class="eyebrow">¿TIENES UN PROYECTO?</p>
         <h2>Hablemos<span>.</span></h2>
         <p>Estoy buscando una nueva oportunidad profesional en desarrollo web, soporte técnico o sistemas. Si crees que mi perfil puede encajar en tu equipo, estaré encantado de hablar.</p>
-        <a class="contact-email" href="mailto:hsanzriesco@gmail.com">hsanzriesco@gmail.com ↗</a>
+        <a class="contact-email" href="mailto:hsanzriesco@gmail.com">hsanzriesco@gmail.com <span aria-hidden="true">↗</span></a>
         <div class="contact-data">
-          <span>629 95 98 91</span>
+          <span><a href="tel:+34629959891" style="color:inherit;text-decoration:none">629 95 98 91</a></span>
           <span>Valladolid, España</span>
           <span>Inglés · Nivel medio</span>
           <span>Carnet B y A2</span>
